@@ -1,0 +1,21 @@
+<h3>If Statment...</h3>
+<div *ngIf="isSuccess">
+    <h1>Success</h1>
+</div>
+
+<h3>If Else Statment...</h3>
+<div *ngIf="!isSuccess; else elseBlock">
+    <h1>Success</h1>
+</div>
+<ng-template #elseBlock>
+    <h1>Failed</h1>
+</ng-template>
+
+<h3>If Then Else Statment...</h3>
+<div *ngIf="isSuccess; then thenBlock; else elseBlock"></div>
+<ng-template #thenBlock>
+    <h1>Then Block</h1>
+</ng-template>
+<ng-template #elseBlock>
+    <h1>Else Block</h1>
+</ng-template>

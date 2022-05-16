@@ -1,0 +1,21 @@
+<h3>Class Bindind...</h3>
+
+<div class="text-success">
+    this is basic class bind using direct class name
+</div>
+
+<div [class]="failText">
+    class bind using [class]
+</div>
+
+<div class="{{failText}}">
+    class bind using Interpolation
+</div>
+
+<div [class.text-success]="isSuccess">
+    class binding using [class.text-success]
+</div>
+
+<div [class]="multiClass">
+    multi class binding using [class]="multiClass"
+</div>

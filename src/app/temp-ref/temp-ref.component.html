@@ -1,0 +1,8 @@
+<h3>Template Refernce...</h3>
+
+<div>
+    <input type="text" #myInput>
+    <input type="text" name="name" id="name" [value]="myInput.value">
+    <button (click)="checkval(myInput.value)">Check</button>
+    <!-- <div>Input Text {{myInput.value}}</div> -->
+</div>
