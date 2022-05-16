@@ -13,6 +13,11 @@ import { TwoWayBindComponent } from './two-way-bind/two-way-bind.component';
 import { IfElseStatComponent } from './if-else-stat/if-else-stat.component';
 import { SwitchCaseComponent } from './switch-case/switch-case.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
+import { ParentComponent } from './component-interaction/parent/parent.component';
+import { ChildComponent } from './component-interaction/child/child.component';
+import { BuiltInPipesComponent } from './built-in-pipes/built-in-pipes.component';
+import { CustomPipeComponent } from './custom-pipe/custom-pipe.component';
+import { ReverseStringPipe } from './reverse-string.pipe';
 
 @NgModule({
   declarations:[
@@ -25,7 +30,12 @@ import { ForLoopComponent } from './for-loop/for-loop.component';
     TwoWayBindComponent,
     IfElseStatComponent,
     SwitchCaseComponent,
-    ForLoopComponent
+    ForLoopComponent,
+    ParentComponent,
+    ChildComponent,
+    BuiltInPipesComponent,
+    CustomPipeComponent,
+    ReverseStringPipe
   ],
   imports:[
     BrowserModule,
