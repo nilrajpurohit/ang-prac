@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -18,6 +19,8 @@ import { ChildComponent } from './component-interaction/child/child.component';
 import { BuiltInPipesComponent } from './built-in-pipes/built-in-pipes.component';
 import { CustomPipeComponent } from './custom-pipe/custom-pipe.component';
 import { ReverseStringPipe } from './reverse-string.pipe';
+import { EmployeeService } from './employee.service';
+import { EmployeeComponent } from './employee/employee.component';
 
 @NgModule({
   declarations:[
@@ -35,14 +38,16 @@ import { ReverseStringPipe } from './reverse-string.pipe';
     ChildComponent,
     BuiltInPipesComponent,
     CustomPipeComponent,
-    ReverseStringPipe
+    ReverseStringPipe,
+    EmployeeComponent
   ],
   imports:[
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers:[],
+  providers:[EmployeeService],
   bootstrap:[AppComponent]  
 })
 
